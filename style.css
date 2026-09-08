@@ -1,0 +1,153 @@
+/*Generic Style for all pages*/
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    background-color: black;
+    min-height: 100vh;
+}
+
+.menu{
+    width: 15vw;
+    min-height: 100vh;
+    background-color: rgb(71, 171, 71);
+    min-width: 180px;
+}
+
+.menu h1{
+    margin-left: 35px;
+    color: rgb(252, 101, 101);
+}
+
+.content{
+    width: 70vw;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.links{
+    list-style-type: none;
+}
+
+.links li{
+    margin-bottom: 12px;
+}
+
+.links li a{
+    color: rgb(2, 2, 170);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.warning{
+    color: red;
+}
+
+.title{
+    text-align: center;
+}
+
+/*index.html*/
+
+.main img{
+    width: 800px;
+    height: 400px;
+    margin-left: 10%;
+}
+
+.main p{
+    overflow-wrap: break-word;
+    margin-left: 10%;
+}
+
+/*ascii.html*/
+.ascii{
+    display: inline-block;
+}
+
+.ascii pre{
+    max-width: 100%;
+    overflow: auto;
+    padding-right: 35px;
+}
+
+/*nyan.html*/
+.nyan img{
+    min-width: 75%;
+    min-height: 75%;
+}
+
+/*meme.html*/
+.meme{
+    display: inline-block;
+}
+
+.memepic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meme div{
+    margin-right: 5%;
+}
+
+/*cats.html*/
+.cat{
+    display: inline-block;
+}
+
+.catpic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.catpic div{
+    margin-bottom: 20px;
+}
+
+.catpic h1{
+    text-align: end;
+}
+
+.catpic img{
+    height: 500px;
+    width: auto;
+    margin-right: 10px; 
+}
+
+/*Mobile Changes*/
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+
+    .menu{
+        width: 100%;
+        min-height: auto;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .main img, .catpic img{
+        width: 100%;
+        height: auto;
+    }
+
+    video, iframe{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+
